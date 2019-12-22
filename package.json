@@ -1,0 +1,15 @@
+{
+  "name": "task-management",
+  "version": "1.0.0",
+  "description": "アイゼンハワー・マトリクス",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": "git@github.com:yukiyuki2019/task-management.git",
+  "author": "yukiyuki2019 <yukiy0305dwycwwyhwya@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "2.0.0-rc.4"
+  }
+}
