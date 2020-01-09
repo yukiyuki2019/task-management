@@ -25,21 +25,25 @@ html(lang="ja")
 
         div.tab-content
           div#task1.tab-pane.active
-            each content in contents
-              li #{content}
+            each post in posts
+              li #{post.content}
+              hr
 
           div#task2.tab-pane
-            each content in contents
-              li #{content}
+            each post in posts
+              li #{post.content}
+              hr
 
 
           div#task3.tab-pane
-            each content in contents
-              li #{content}
+            each post in posts
+              li #{post.content}
+              hr
 
           div#task4.tab-pane
-            each content in contents
-              li #{content}
+            each post in posts
+              li #{post.content}
+              hr
 <!-- TODO CSSでチェックされたものは表示、非表示など設定-->        
 <!-- TODO オーバーレイでアイゼンハワーの説明 -->
 
