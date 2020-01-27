@@ -15,6 +15,7 @@ html(lang="ja")
     form(method="post" action="/posts")
       div.input-group.mb-3
         input(type="text", name="content", id="newTask" placeholder='タスクを追加').form-control
+        input(type="hidden", name="oneTimeToken" value=oneTimeToken)
         div.input-group-append
           button(type="submit").btn.btn-outline-primary 追加
         
@@ -26,6 +27,7 @@ html(lang="ja")
           li.list-group-item #{post.content}
             form(method="post" action="/posts?delete=1")
               input(type="hidden", name="id", value=post.id)
+              input(type="hidden" name="oneTimeToken" value=oneTimeToken)
               button(type="submit").btn.btn-danger.float-right 削除
       else
         div.card.d-none
