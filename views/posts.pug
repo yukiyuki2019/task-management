@@ -4,15 +4,15 @@ html(lang="ja")
     meta(charset="UTF-8")
     style.
       body{
-        background: #79BD9A;
-        background: -webkit-linear-gradient(to left, #A8DBA8, #20e3b2, #79BD9A);
-        background: linear-gradient(to left, #A8DBA8, #20e3b2, #79BD9A);
+        background: #03d1ab;
+        background: -webkit-linear-gradient(to left, #2adeb7, #3feac3, #03d1ab);
+        background: linear-gradient(to left, #2adeb7, #3feac3, #03d1ab);
       }
       a.btn{
         box-shadow: 0px 2px 2px gray;
       }
       .heading{
-        color: #fff7f7;
+        color: #f4f5f7;
       }
       h1.heading{
         font-family: "Comic Sans MS";
@@ -24,9 +24,17 @@ html(lang="ja")
         box-shadow: 2px 2px 4px gray;
       }
       li.list-group-item{
-        background: #fff7f7;
+        background: #f4f5f7;
+        color: #13241f;
         box-shadow: 2px 2px 4px gray;
         font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+      }
+
+      button.inputarea{
+        background: #3b9cff;
+      }
+      button.deletebtn{
+        background: #ee3769;
       }
 
     link(rel="stylesheet",
@@ -57,7 +65,7 @@ html(lang="ja")
             form(method="post" action="/posts?delete=1")
               input(type="hidden", name="id", value=post.id)
               input(type="hidden" name="oneTimeToken" value=oneTimeToken)
-              button(type="submit").btn.btn-danger.float-right 削除
+              button(type="submit" class="deletebtn").btn.btn-danger.float-right 削除
       else
         div.card.d-none
 

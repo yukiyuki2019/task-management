@@ -1,0 +1,33 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    style.
+      body{
+        background: #03d1ab;
+        background: -webkit-linear-gradient(to left, #2adeb7, #3feac3, #03d1ab);
+        background: linear-gradient(to left, #2adeb7, #3feac3, #03d1ab);
+      }
+      h1.my-4{
+        color: #13241f;
+        font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+      }
+      a.btn{
+        box-shadow: 0px 2px 2px gray;
+      }
+    link(rel="stylesheet",
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css",
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
+    crossorigin="anonymous")
+    title Logout
+
+  body.container
+    div.my-5
+      h1.my-4 ログアウトしました
+      a(href="/posts").btn.btn-primary.form-control ログイン
+
+
+    script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js",
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl",
+    crossorigin="anonymous")
