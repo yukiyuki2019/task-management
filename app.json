@@ -1,0 +1,8 @@
+{
+  "name": "todo-list",
+  "description": "TODOリスト",
+  "repository": "https://github.com/yukiyuki2019/todo-list",
+  "logo": "",
+  "keywords": ["node"],
+  "image": "heroku/nodejs"
+}
